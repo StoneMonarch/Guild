@@ -15,12 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Login to Docker Hub
-        run: docker login -u ${{ secrets.DOCKER_USER }} --password-stdin ${{ secrets.DOCKER_PASS }}
+        run: |
+          export DOCKERHUB_PASSWORD=${{ secrets.DOCKER_PASS }}
+          echo $DOCKERHUB_PASSWORD | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
       - name: Build Docker image
         run: docker build -t $REPO:latest -t $REPO:${GITHUB_SHA::8} .
       - name: Publish Docker image
         run: docker push $REPO
-        
+
   redeploy:
     runs-on: ubuntu-20.04
     name: Redeploy webhook call
