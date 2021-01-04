@@ -3,7 +3,7 @@ plugins {
     id 'java'
 }
 
-group 'ca.voidustries.nova'
+group 'ca.voidustries.guild'
 version 'alpha'
 
 repositories {
@@ -20,4 +20,4 @@ test {
     useJUnitPlatform()
 }
 
-mainClassName = 'ca.voidustries.Nova.Main'
+mainClassName = 'ca.voidustries.Guild.Main'

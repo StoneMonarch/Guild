@@ -1,4 +1,4 @@
-package ca.voidustries.Nova.commands;
+package ca.voidustries.Guild.commands;
 
 import org.javacord.api.event.message.MessageCreateEvent;
 import org.javacord.api.listener.message.MessageCreateListener;
