@@ -14,6 +14,8 @@ public class Main {
         // Log the bot into discord using system token (Either Alpha, or Prod)
         DiscordApi api = new DiscordApiBuilder().setToken(token).login().join();
 
+        api.updateActivity("....No one Knows....");
+
         api.addMessageCreateListener(new UserInfoCommand());
 
         // Print the invite url of your bot
