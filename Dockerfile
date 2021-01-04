@@ -6,10 +6,10 @@ COPY settings.gradle /workspace
 COPY gradle /workspace
 COPY src /workspace/src
 RUN gradle build
-RUN unzip build/distributions/Nova*.zip
+RUN unzip build/distributions/Guild*.zip
 
 FROM openjdk:15.0.1-jdk
-RUN mkdir -p /Nova
-COPY --from=BUILD /workspace/Nova*/bin/Nova /Nova/bin/Nova
-COPY --from=BUILD /workspace/Nova*/lib/* /Nova/lib/
-CMD ./Nova/bin/Nova
+RUN mkdir -p /Guild
+COPY --from=BUILD /workspace/Guild*/bin/Guild /Guild/bin/Guild
+COPY --from=BUILD /workspace/Guild*/lib/* /Guild/lib/
+CMD ./Guild/bin/Guild
