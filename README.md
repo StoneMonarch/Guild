@@ -1,4 +1,4 @@
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/StoneMonarch/fantastic-waddle/redeploy/master?style=for-the-badge)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/StoneMonarch/fantastic-waddle/Build%20&%20Redeploy/master?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/StoneMonarch/fantastic-waddle?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/StoneMonarch/fantastic-waddle?style=for-the-badge)
 # Guild
