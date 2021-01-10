@@ -32,8 +32,8 @@ public class Main {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                DateTime endTime = new DateTime(2021, 3, 11, 0, 0);
-                DateTime startTime = new DateTime();
+                DateTime endTime = new DateTime(2021, 3, 11, 0, 0, DateTimeZone.forOffsetHours(-5));
+                DateTime startTime = new DateTime(DateTimeZone.forOffsetHours(-5));
                 Period p = new Period(startTime, endTime, PeriodType.yearDayTime());
                 String activityString = "Days: " + p.getDays() + ", Hours: " + p.getHours();
                 String hex = "";
