@@ -26,23 +26,5 @@ public class Main {
 
         // Print the invite url of your bot
         System.out.println("You can invite the bot by using the following url: " + api.createBotInvite());
-
-        Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                DateTime endTime = new DateTime(2021, 3, 11, 0, 0, DateTimeZone.forOffsetHours(-5));
-                DateTime startTime = new DateTime(DateTimeZone.forOffsetHours(-5));
-                Period p = new Period(startTime, endTime, PeriodType.yearDayTime());
-                String activityString = "Days: " + p.getDays() + ", Hours: " + p.getHours();
-                StringBuilder hex = new StringBuilder();
-                for (int i = 0; i < activityString.length(); i++) {
-                    hex.append(Integer.toHexString(activityString.charAt(i)));
-                }
-
-                System.out.println(hex);
-                api.updateActivity(hex.toString());
-            }
-        }, 0, 3600000);
     }
 }
