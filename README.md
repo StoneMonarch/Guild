@@ -7,9 +7,9 @@
 
 Guild is a general development project with the idea of learning a few things.
 
-- [ ] Java + Gradle development process
-- [ ] Docker container creation and management
-- [ ] Automated build and deploy process
+- [*] Java + Gradle development process
+- [*] Docker container creation and management
+- [*] Automated build and deploy process
 
 The biggest thing I am looking to learn is the CD/CI process. Docker was chosen for the 
 runtime environment as it can provide an identical env everytime on any system. Github 
