@@ -2,6 +2,8 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/StoneMonarch/fantastic-waddle?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/StoneMonarch/fantastic-waddle?style=for-the-badge)
 # Guild
+
+**THIS DISCORD BOT IS JUST A SIMPLE JAVA APPLICATION TO PUT THEROUGH THE BUILD PROCESS**
 Guild is a general development project with the idea of learning a few things.
 
 - [ ] Java + Gradle development process
